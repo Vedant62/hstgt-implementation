@@ -1,0 +1,45 @@
+############################
+# Python / runtime
+############################
+env/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+############################
+# IDE / OS
+############################
+.vscode/
+.idea/
+.DS_Store
+
+############################
+# Secrets
+############################
+.env
+
+############################
+# Large/generated artifacts
+############################
+# Raw input data (OHLCV, cached news, etc.)
+data/raw/**
+# Engineered features + intermediate artifacts (parquet)
+data/processed/**
+# Cached daily graphs (PKL)
+data/graphs/**
+# Checkpoints + evaluation outputs
+results/**
+
+# Extra safety: ignore any generated artifacts anywhere
+*.pkl
+*.parquet
+
+# Keep directory structure visible in GitHub
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/graphs/.gitkeep
+!results/.gitkeep
