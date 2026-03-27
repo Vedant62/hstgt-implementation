@@ -10,6 +10,10 @@ The core idea is to represent each trading day as a **heterogeneous graph** of s
 
 Training is done with **walk-forward / rolling-window optimization** to reduce lookahead bias.
 
+> Model architecture
+<img width="827" height="302" alt="image" src="https://github.com/user-attachments/assets/fbcd6de1-d50c-4bdd-88b8-7802fd4c97ab" />
+
+
 ## What I tried (project history)
 
 1. **Baseline model (no semantic/news edges)**
