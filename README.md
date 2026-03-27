@@ -10,7 +10,7 @@ The core idea is to represent each trading day as a **heterogeneous graph** of s
 
 Training is done with **walk-forward / rolling-window optimization** to reduce lookahead bias.
 
-> Model architecture
+> Model architecture (rough)
 <img width="827" height="302" alt="image" src="https://github.com/user-attachments/assets/fbcd6de1-d50c-4bdd-88b8-7802fd4c97ab" />
 
 
@@ -30,10 +30,6 @@ Training is done with **walk-forward / rolling-window optimization** to reduce l
    - Rebuild graphs for dates where semantic edges exist.
    - Retrain the same `HSTGT` architecture and compare against baseline metrics.
    - Implemented in the repo’s `step1.py` → `step2.py` → `step3.py` → `step4.py` scripts.
-
-3. **Alternative/older semantic pipelines (kept in code, may be redundant)**
-   - There are additional scripts/modules for semantic edge generation (e.g., `src/data_pipeline/run_finbert.py` and `src/data_pipeline/semantic_edges.py`) that reflect earlier iterations.
-   - For a clean GitHub repo, you likely want to keep only one canonical path in the README and archive/remove the older variants (details below).
 
 ## Repo layout (main pieces)
 
